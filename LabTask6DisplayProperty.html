@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LabTask6DisplayProperty</title>
+
+    <style> 
+        body{
+            margin: 90px;
+            font-family: Arial, Helvetica, sans-serif;
+            display: grid;
+            place-items: center;
+        }
+
+        .profile{
+            display: inline-block;
+            margin: 10px;
+            padding: 5px;
+            width: auto;
+        }
+
+        .profile1{
+            display:block;
+            margin: 10px;
+            padding: 5px;
+            width: auto;
+        }
+
+        .message, #mes1, .mes2{
+            display: inline-block;
+            vertical-align: middle;
+            margin: 5px;
+        }
+
+        .pic{
+            display: flex;
+            margin-bottom: 10px;
+            width: 18%;
+            height: 8%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .SearchBar{
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+            width: 50%;
+            height:70%;
+        }
+
+        .info1{
+            display: inline-block;
+            margin: 0px;
+            padding: 4px;
+            border-radius: 9px;
+            margin-top: 20px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            flex-direction: wrap;
+        }
+
+        .info2{
+            display: block;
+            height: 35px;
+            width: 342px;
+            margin-top: 10px;
+            padding: 4px;
+            border-radius: 9px;
+        }
+
+        .SignUp{
+            padding: 4px;
+            margin-top: 10px;
+            padding: 15px;
+            width: 354px;
+            background-color: #4285F4;
+            border-radius: 10px;
+            color:white;
+            font-weight: 600;
+            font-size: medium;
+            border: none;
+        }
+
+        .places{
+            display: block;
+            padding: 4px;
+            margin-top: 8px;
+            padding: 15px;
+            width: 354px;
+            border: none;
+            font-size: small;
+            background-color: rgb(226, 226, 226);
+        }
+
+        .RequestNow{
+            display: inline-block;
+            padding: 16px;
+            margin-top: 38px;
+            background-color: black;
+            color: #fff;
+            border: none;
+        }
+
+        .ScheduleForLater{
+            display: inline-block;
+            padding: 16px;
+            margin-top: 38px;
+            margin-left: 1rem;
+            background-color: rgb(226, 226, 226);
+            border: none;
+        }
+    </style>
+
+</head>
+
+    <body>
+        <div class="profile">
+            <input class="profile1" type = "text" name="Name" placeholder="Name">
+            <input class="profile1" type = "text" name="Email" placeholder="E-mail">
+        </div>
+
+        <br>
+        <hr width="99%" color="black">
+        <br>
+
+        <div class="message">
+            <p id="mes1">Thanks for chatting with our<br> customer support. Would you<br> like to take our quick survey?</p>
+            <button class="mes2">Yes</button>
+            <button class="mes2">No</button>
+        </div>
+        
+        <br>
+        <hr width="99%" color="black">
+        <br>
+
+        <div class="pic">
+            <img src="https://scontent.fcrk1-3.fna.fbcdn.net/v/t1.15752-9/351543828_282208284170903_2589767682266604638_n.png?_nc_cat=100&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeHifgaKuZJsiwgNH46_xOpYFV6VEIoXPakVXpUQihc9qbzpyDdsObtTmJ6Nql7zjxC0_qiIaHK8HUtwAaroQAsL&_nc_ohc=OKHr2dpXyEkAX_w5Way&_nc_ht=scontent.fcrk1-3.fna&oh=03_AdQcuVDCZ9fUjlHcmcBmSNOLXOfLBJGwGH8SV2nY8neB4A&oe=66091796" alt="">
+        </div>
+       
+        <input class="SearchBar" type = "text" name="Search" placeholder="Search Google or type URL"><br>
+        
+        <br>
+        <hr width="99%" color="black">
+        <br>
+
+        <h1>Sign Up Form</h1>
+        <div>
+            <input type="text" id="name1" placeholder="First name" class="info1"/>
+            <input type="text" id="name2" placeholder="Last name" class="info1" />
+            <input type="text" id="name3" placeholder="Email" class="info2">
+            <button class="SignUp">Sign Up</button>
+        </div>
+        
+        <br>
+        <hr width="99%" color="black">
+        <br>
+
+        <h1>Request a ride now</h1>
+        <div>
+            <input class="places" type = "text" name="Location" placeholder="Enter pickup location"/>
+            <input class="places" type = "text" name="Destination" placeholder="Enter destination"/>
+            <button class="RequestNow">Request now</button>
+            <button class="ScheduleForLater">Schedule for later</button>
+        </div>
+
+    </body>
+ </html>
